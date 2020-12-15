@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: calibri;
+}
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #305496;
+}
+.page-header {
+    color: #ffffff;
+}
+.header-title {
+    color: #ffffff;
+    display: inline;
+    float: left;
+    margin: 10px 20px 10px 30px;
+    font-size: 28px;
+}
+.logo {
+    display: inline;
+    float: left;
+    margin: 10px;
+}
+/*.nav-menu {
+    color: #ffffff;
+    float: right;
+    margin: 15px 70px 10px 0px;
+} menu-option*/
+#menu-title {
+    color: #ffffff;
+}
+#table-content {
+    width: 80%;
+    margin: 5% 10% 15% 10%;
+}
+th, td {
+	font-size:1.05em;
+	padding: 5px 7px 0 0;
+}
+.row-name {
+    text-align: left;
+    padding-right: 120px;
+}
+.row-price {
+    text-align: right;
+}
+.row-active, .row-launch, .row-cat, .row-del, .row-action {
+    text-align: center;
+}
+.menu-option {
+    color: #ffffff;
+    float: right;
+    margin: 10px 70px 10px 0px;
+}
+.menu-option li {
+    list-style-type: none;
+    display: inline;
+    float: left;
+    margin: 10px;
+    padding-left: 30px;
+}
+#dateOfLaunch {
+    margin-right: 100px;
+}
+#textfield-width input {
+    width: 316%;
+}
+#label-padding {
+    text-align: left;
+    padding-top: 15px;
+}
+#btn-save {
+    padding-top: 20px;
+}
+.text-label {
+    font-weight: bold;
+    color: #595959;
+    padding-right: 150px;
+}
+#item-name {
+    text-align: left;
+}
+#submit {
+    color: #ffffff;
+    background-color: #305496;
+    height: 50px;
+    width: 120px;
+    font-size: 1.2em;
+    float: left;
+}
+.menu-item-added{
+    color: #1eba6e;
+    padding-top: 10px;
+}
+.item-added-to-cart, .item-removed-cart {
+    padding-left: 20%;
+    color: #1eba6e;
+}
+#total-title {
+    text-align: left;
+    font-weight: bold;
+}
+#total-price {
+    text-align: right;
+    font-weight: bold;
+}
+#empty-cart-msg {
+    padding-top: 20px;
+	color: #595959;
+}
+footer {
+    position: absolute;
+    height: 35px;
+    width: 100%;
+    background-color: #bfbfbf;
+    padding-top: 15px;
+    float: left;
+    bottom: 0;
+}

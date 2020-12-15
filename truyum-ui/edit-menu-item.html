@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <script src="./js/script.js" type="javascript" ></script>
+    <title>Edit Menu Item</title>
+</head>
+<body>
+    <header>
+        <div class="header-title">
+            <label for="page-header" id="page-header">truYum</label>
+        </div>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="logo" width="30px" height="30px" />
+        </div>        
+        <div class="nav-menu">
+            <nav>
+                <ul class="menu-option">
+                    <li id="menu-title"><a id="menu-title" href="menu-item-list-admin.html">Menu</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="table-content">
+        <h1>Edit Menu Item</h1>
+        <form action="edit-menu-item-status.html">
+            <table>
+                <tr>
+                    <td id="item-name">
+                        <label class="text-label" for="title">Name</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="textfield-width">
+                        <input type="text" name="title" id="title" minlength="2" maxlength="65" required /> 
+                    </td>
+                </tr>
+                <tr>
+                    <td id="label-padding">
+                        <label class="text-label" for="price">Price (Rs.)</label>
+                    </td>
+                    <td id="label-padding">
+                        <label class="text-label" for="inStock">Actice</label>
+                    </td>
+                    <td id="label-padding">
+                        <label class="text-label" for="dateOfLaunch">Date of Launch</label>
+                    </td>
+                    <td id="label-padding">
+                        <label class="text-label" for="category">Category</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="text" name="price" id="price" pattern="[0-9]+" size="10px" required />
+                    </td>
+                    <td>
+                        <input type="radio" name="inStock" id="yesinstock" required>
+                        <span>Yes</span>
+                        <input type="radio" name="inStock" id="noinstock" required>
+                        <span>No</span>
+                    </td>
+                    <td>
+                        <input type="date" name="dateOfLaunch" id="dateOfLaunch" size="18px" placeholder="dd/mm/yyyy" onchange="invalidDateOfLaunch()" required />
+                    </td>
+                    <td>
+                        <select name="category" id="category" required>
+                            <option value="Starters">Starters</option>
+                            <option value="Main Course">Main Course</option>
+                            <option value="Desserts">Desserts</option>
+                            <option value="Drinks">Drinks</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td id="label-padding">
+                        <input type="checkbox" name="freeDelivery" id="freeDelivery"><label class="text-label" for="freeDelivery">Free Delivery</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td id="btn-save">
+                        <input type="submit" name="submit" id="submit" value="Save" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <footer>
+        Copyright &copy; 2019
+    </footer>
+</body>
+</html>
